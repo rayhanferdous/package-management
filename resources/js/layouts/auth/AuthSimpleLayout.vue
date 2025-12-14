@@ -1,12 +1,8 @@
-<script setup lang="ts">
+<script setup>
 import AppLogoIcon from '@/components/AppLogoIcon.vue';
-import { home } from '@/routes';
 import { Link } from '@inertiajs/vue3';
 
-defineProps<{
-    title?: string;
-    description?: string;
-}>();
+defineProps();
 </script>
 
 <template>
@@ -17,7 +13,7 @@ defineProps<{
             <div class="flex flex-col gap-8">
                 <div class="flex flex-col items-center gap-4">
                     <Link
-                        :href="home()"
+                        href="/"
                         class="flex flex-col items-center gap-2 font-medium"
                     >
                         <div
